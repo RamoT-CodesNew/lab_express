@@ -1,0 +1,14 @@
+<%- include("header") %>
+<section>
+  <h2>Users</h2>
+  <p>Users generated from @faker-js/faker.</p>
+  <table>
+    <thead><tr><th>Name</th><th>Email</th><th>City</th></tr></thead>
+    <tbody>
+      <% users.forEach(u => { %>
+        <tr><td><%= u.name %></td><td><%= u.email %></td><td><%= u.city %></td></tr>
+      <% }) %>
+    </tbody>
+  </table>
+</section>
+<%- include("footer") %>

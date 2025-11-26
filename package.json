@@ -1,0 +1,12 @@
+{
+  "name": "hw1-express",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": { "start": "node index.mjs" },
+  "dependencies": {
+    "@faker-js/faker": "^9.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.21.0"
+  }
+}

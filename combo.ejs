@@ -1,0 +1,21 @@
+<%- include("header") %>
+<section>
+  <h2>Quote and user</h2>
+  <div class="combo">
+    <div>
+      <h3>Quote</h3>
+      <blockquote><%= quote %></blockquote>
+      <% if (author) { %><p>— <%= author %></p><% } %>
+    </div>
+    <div>
+      <h3>User</h3>
+      <ul>
+        <li><strong>Name:</strong> <%= user.name %></li>
+        <li><strong>Email:</strong> <%= user.email %></li>
+        <li><strong>City:</strong> <%= user.city %></li>
+      </ul>
+    </div>
+  </div>
+  <p><a class="button" href="/combo">New quote and user</a></p>
+</section>
+<%- include("footer") %>
